@@ -31,7 +31,7 @@ const VideoDetail = () => {
         }
       }
     );
-  }, []);
+  }, [id]);
 
   if (!videoDetails) return;
 
@@ -53,7 +53,7 @@ const VideoDetail = () => {
             />
             <h2 className="text-2xl my-2 text-white font-bold p-2">{title}</h2>
             <div className="flex justify-between text-white py-1 px-2">
-              <Link>
+              <Link to={`/channel/${channelId}`}>
                 <h2 className="relative font-medium text-lg">
                   {channelTitle}
                   <AiFillCheckCircle className="inline ml-1" />

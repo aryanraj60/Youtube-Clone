@@ -20,11 +20,11 @@ export const categories = [
   { name: "Books", icon: <TbBooks size={"1.3rem"} /> },
 ];
 
-export const demoThumbnailUrl = "https://i.ibb.co/G2L2Gwp/API-Course.png";
-export const demoChannelUrl = "/channel/UCmXmlB4-HJytD7wek0Uo97A";
-export const demoVideoUrl = "/video/GDa8kZLNhJ4";
-export const demoChannelTitle = "JavaScript Mastery";
-export const demoVideoTitle =
-  "Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI";
+export const demoThumbnailUrl =
+  "https://i.ytimg.com/an_webp/KX5fApDbiLU/mqdefault_6s.webp?du=3000&sqp=CJqNg54G&rs=AOn4CLCghYW4q8N7GBeWL9o_qjKovHaLkw";
+export const demoChannelUrl = "/channel/UCtYzVCmNxrshH4_bPO_-Y-A";
+export const demoVideoUrl = "/video/KX5fApDbiLU&t=250s";
+export const demoChannelTitle = "The Art of Improvement";
+export const demoVideoTitle = "20 Things Most People Learn Too Late In Life";
 export const demoProfilePicture =
   "http://dergipark.org.tr/assets/app/images/buddy_sample.png";
