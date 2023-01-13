@@ -2,7 +2,6 @@ import React from "react";
 import { ChannelCard, VideoCard } from "./";
 
 const Videos = ({ videos, marginAuto, direction, route }) => {
-  console.log("Videos Rendered!");
   return (
     <div
       className={`Cards_Container max-w-5xl flex ${

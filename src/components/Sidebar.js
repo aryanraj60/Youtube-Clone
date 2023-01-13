@@ -2,7 +2,6 @@ import React from "react";
 import { categories } from "../utils/constant";
 
 const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
-  console.log("Sidebar Rendered!");
   return (
     <aside className="sidebar" aria-label="Sidebar">
       <div className="rounded">

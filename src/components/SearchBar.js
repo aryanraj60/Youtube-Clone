@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { Paper, IconButton } from "@mui/material";
-// import { Search } from "@mui/icons-material";
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -18,7 +16,7 @@ const SearchBar = () => {
       setSearchTerm("");
     }
   };
-  console.log("Search Bar Rendered!");
+
   return (
     <form className="flex items-center" onSubmit={handleSubmit}>
       <label htmlFor="simple-search" className="sr-only">

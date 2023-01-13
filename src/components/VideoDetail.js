@@ -14,7 +14,6 @@ const VideoDetail = () => {
 
   useEffect(() => {
     fetchFromAPI(`videos?part=snippet,statistics&id=${id}`).then((data) => {
-      console.log("Data Fetched For Video Detail Page", data);
       if (data.items) {
         setVideoDetails(data.items[0]);
       }
@@ -22,10 +21,6 @@ const VideoDetail = () => {
 
     fetchFromAPI(`search?relatedToVideoId=${id}&part=snippet&type=video`).then(
       (data) => {
-        console.log(
-          "Suggested Videos Data Fetched for Video Detail Page",
-          data
-        );
         if (data.items) {
           setSuggestedVideos(data.items);
         }
@@ -40,7 +35,6 @@ const VideoDetail = () => {
     statistics: { viewCount, likeCount },
   } = videoDetails;
 
-  console.log("Video Detail Page Rendered!");
   return (
     <div className="min-h-[95vh]">
       <div className="flex flex-col md:flex-row gap-4">

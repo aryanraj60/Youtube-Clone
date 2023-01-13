@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Box } from "@mui/material";
+
 import {
   Navbar,
   ChanneDetail,
@@ -10,10 +10,7 @@ import {
   Footer,
 } from "./components";
 
-console.log("I'm App - Outside");
-
 const App = () => {
-  console.log("App Rendered!");
   return (
     <Router>
       <div className="App_Wrapper bg-[#000]">

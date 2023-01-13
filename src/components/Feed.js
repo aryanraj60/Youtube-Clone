@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Stack, Box, Typography } from "@mui/material";
+
 import { Sidebar, Videos } from "./";
 import { fetchFromAPI } from "../utils/fetchFromApi";
 
@@ -8,16 +8,13 @@ const Feed = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    console.log("I'm useEffect Of Feed!");
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then((data) => {
-      console.log("Data Fetched for Feed Page!", data);
       if (data.items) {
         setVideos(data.items);
       }
     });
   }, [selectedCategory]);
 
-  console.log("Feed Rendered!");
   return (
     <div className="Feed flex flex-col md:flex-row">
       <div className="Feed_Sidebar_Container md:h-[92vh] border-r-2 border-gray-400 md:p-2">

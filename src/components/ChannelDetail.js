@@ -10,9 +10,7 @@ const ChannelDetail = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    console.log("I'm UseEffect Of Channel Details Page");
     fetchFromAPI(`channels?part=snippet&id=${id}`).then((data) => {
-      console.log("Channel Data Fetched for Channel Details", data);
       if (data.items) {
         setChannelDetails(data.items[0]);
       }
@@ -20,8 +18,6 @@ const ChannelDetail = () => {
 
     fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`).then(
       (data) => {
-        console.log("Channel Videos Fetched for Channel Details", data);
-
         if (data.items) {
           setVideos(data.items);
         }
@@ -29,7 +25,6 @@ const ChannelDetail = () => {
     );
   }, []);
 
-  console.log("ChannelDetail Page Rendered!");
   return (
     <div className="h-[95vh]">
       <div className="h-[50%]">
